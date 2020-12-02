@@ -3,7 +3,7 @@ with open('input.txt') as f:
 expenses = list(map(int, expenses))
 expenses.sort()
 
-left = 1
+left = 0
 right = -1
 while expenses[left] + expenses[right] != 2020:
     print(left, "\t", expenses[left], "\t", right, "\t", expenses[right])
